@@ -1,0 +1,18 @@
+<div id="box">
+  <h3>Listado de Colores:</h3>
+  <div>
+    <table>
+      <thead><td id="td">ID</td><td id="td">NOMBRE</td><td id="td">COLOR</td><td id="td">HEX</td></thead>
+      <tr *ngFor="let color of listadoColores">
+
+          <td id="td">{{color.id}}</td>
+          <td id="td">{{color.nombre}}</td>
+          <td id="td" style="background-color:rgb({{color.rojo}},{{color.verde}},{{color.azul}})"></td>
+          <td id="td">{{rgbToHex(color.rojo,color.verde,color.azul)}}</td>
+
+      </tr>
+    </table>
+  </div>
+
+</div>
+

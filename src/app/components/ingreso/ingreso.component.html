@@ -1,0 +1,19 @@
+<div id="box" [formGroup]="formGroup">
+  <div id="fields">
+    Nombre:
+    <input type="text" formControlName="nombre" id="inputText">
+  </div>
+  <div  id="fields">
+    Rojo:
+    <input type="number" formControlName="rojo" id="inputText">
+  </div>
+  <div  id="fields">
+    Verde:
+    <input type="number" formControlName="verde" id="inputText">
+  </div>
+  <div  id="fields">
+    Azul:
+    <input type="number" formControlName="azul" id="inputText">
+  </div>
+  <button id="boton" (click)="grabar()">Grabar</button>
+  <h4 style="color: #2d8530">{{msg}}</h4>
