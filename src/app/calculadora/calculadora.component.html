@@ -1,0 +1,15 @@
+<div id="box">
+<div>
+    Operando 1<input type="text" [(ngModel)]="op1"><br>
+    Operando 2<input type="text" [(ngModel)]="op2"><br>
+    <br>
+    <button id="button" (click)="sumar()">+</button>
+    <button id="button" (click)="restar()">-</button>
+    <button id="button" (click)="mult()">*</button>
+    <button id="button" (click)="div()">/</button>
+
+  <div *ngIf="showRes">
+    {{res}}
+  </div>
+</div>
+</div>

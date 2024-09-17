@@ -1,0 +1,13 @@
+<div id="box">
+  <div>
+    Celsius<input type="text" [(ngModel)]="cel"><br>
+
+    <br>
+    <button id="button" (click)="convertir()">Convertir</button>
+
+
+    <div *ngIf="showRes">
+      {{res}} °F
+    </div>
+  </div>
+</div>

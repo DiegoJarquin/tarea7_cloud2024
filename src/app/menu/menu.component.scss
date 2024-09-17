@@ -1,0 +1,22 @@
+#header {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  #title {
+    width: 30%;
+    font-size: 30px;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  #opciones {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .opcion {
+      padding: 20px 0px;
+    }
+  }
+}
